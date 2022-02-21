@@ -1,0 +1,31 @@
+<mvc:View xmlns:form="sap.ui.layout.form"
+    controllerName="com.tasa.module2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <form:Form >
+                            <form:formContainers>
+                                <form:FormContainer >
+                                    <form:formElements>
+                                        <form:FormElement label="Codigo" >
+                                            <form:fields>
+                                                <Text text="{/sObjectId}" />
+                                            </form:fields>
+                                        </form:FormElement>
+
+                                    </form:formElements>
+                                </form:FormContainer>
+                            </form:formContainers>
+                        </form:Form>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
